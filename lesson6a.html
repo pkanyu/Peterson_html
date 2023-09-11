@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <form style="width: 0;">
+        <fieldset style="width: 0;">
+            <legend>Personal Details</legend>
+            <input type="text" name="name" id="" placeholder="Your name"> <br> <br>
+            <input type="id_number" name="number" id="" placeholder="Your ID Number" required> <br> <br>
+            <input type="email" name="email" id="" placeholder="Your Email"> <br> <br>
+            <input type="password" name="password" id="" placeholder="Your Password"> <br> <br>
+            <input type="password" name="confirm" id="" placeholder="Confirm Password"> <br> <br>
+            <input type="tel" name="phone" id="" placeholder="Your Phone"> <br> <br>
+            <label for="dob">Your DOB</label> <br>
+            <input type="date" name="dob" id="dob">
+        </fieldset> 
+        <br>
+        <br>
+        <fieldset style="width: 0;">
+            <legend>Your Interests</legend>
+            <!-- checkboxes:  allows multiple selections -->
+            <label for="">Co-Curricular </label> <br>
+            <!-- checkboxes have values that when ticked return that value.Instead of the check  -->
+            <input type="checkbox" name="Co-Curricular" id="Co-Curricular" value="fball"> Football <br>
+            <input type="checkbox" name="Co-Curricular" id="Co-Curricular" value="vball"> Volleyball <br>
+            <label for="">Your Gender</label> <br>
+            <input type="radio" name="gender" id="gender" value="female"> Female <br>
+            <input type="radio" name="gender" id="gender" value="male"> Male <br>
+            <input type="radio" name="gender" id="gender" value="other"> Other <br>
+            <!-- radio also have value attached to it when checked that return that value  -->
+            <label for="">Attach CV</label> <br>
+            <input type="file" name="cv" id="cv"> <br> <br>
+            <label for="course">Select Your Course</label> <br>
+            <!-- The option value in select is used just as we use value in checkboxes and radio that is that value. -->
+            <select name="course" id="course">
+                <option value="med">Medcine</option>
+                <option value="cs">Computer Science</option>
+                <option value="ds">Data Science</option>
+                <option value="as" selected>Acturial Science </option>
+            </select>
+        </fieldset >
+        <!-- The form sections go on just like images so they need to be separated with the br tag -->
+        <br>
+        <br>
+        <fieldset>
+            <legend>Comment Section</legend>
+            <label for="comment">Leave a comment</label> <br>
+            <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+        </fieldset>
+        <br>
+    <input type="submit" value="Make Application"> <br>
+    <input type="reset" value="Reset">
+    </form>
+
+
+
+</body>
+</html>
